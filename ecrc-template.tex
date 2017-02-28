@@ -267,7 +267,7 @@ that overload its resources. The stress testing verifies the system behavior aga
 
 \section{Method}
 
-This paper surveys the state of the art literature in stress testing research. The thesis extends the survey presented by Jiang et al. to the Stress Testing context \cite{Jiang2010}.  This survey will be useful for stress testing practitioners and software engineering researchers with interests in testing and analyzing software systems. The paper use the systematic review method proposed by Kitchenham \cite{Kitchenham2007b}.
+This paper surveys the state of the art literature in stress testing research. The thesis extends the survey presented by Jiang et al. and Afzal et al. \cite{Afzal2009a} to the Stress Testing context \cite{Jiang2010}.  This survey will be useful for stress testing practitioners and software engineering researchers with interests in testing and analyzing software systems. The paper use the systematic review method proposed by Kitchenham \cite{Kitchenham2007b}.
 
 
 
@@ -362,21 +362,21 @@ We used the following search terms:
 \item Test tools: jmeter, load runner, performance tester
 \end{itemize}
 
-All papers found are stored in \url{https://www.mendeley.com/community/pesquisatesteperformance}.
+All papers found are stored in \url{https://www.mendeley.com/community/pesquisatesteperformance}. Figures \ref{fig:bubbleload} and \ref{fig:bubblestress} show the bubble chart for 'Load Testing'  and 'Stress Testing' keywords. Figures \ref{fig:wordcloudloadtesting} and \ref{fig:wordcloudloadtesting} present the word cloud extracted for title and abstract of the papers found with keywords 'Load testing' and'Stress testing'.
 
 
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.6\textwidth]{./images/loadtestingbuble.png}
 \caption{Bubble chart for results of search with the keyword 'Load Testing'}
-\label{fig:testprocess}
+\label{fig:bubbleload}
 \end{figure}
 
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.7\textwidth]{./images/stresstestingbuble.png}
 \caption{Bubble chart for results of search with the keyword 'Stress Testing'}
-\label{fig:testprocess}
+\label{fig:bubblestress}
 \end{figure}
 
 
@@ -386,7 +386,7 @@ All papers found are stored in \url{https://www.mendeley.com/community/pesquisat
 \centering
 \includegraphics[width=1\textwidth]{./images/wordcloudloadtesting.png}
 \caption{Word cloud for results of search with the keyword 'Load Testing'}
-\label{fig:testprocess}
+\label{fig:wordcloudloadtesting}
 \end{minipage}
 \begin{minipage}{0.5\textwidth}
 \centering
@@ -427,10 +427,11 @@ Figure \ref{fig:SUMMARY} presents the type of research paper by year.
 \label{fig:SUMMARY}
 \end{figure}
 
+Table \ref{tab:stresstesting} show the number of papers by type of stress testing found un the systematic review.
 
 \begin{table}[!htbp] \centering 
-  \caption{} 
-  \label{} 
+  \caption{Number of papers by type of Stress Testing} 
+  \label{tab:stresstesting} 
 \begin{tabular}{@{\extracolsep{5pt}} cccccccccccccccccccccccccc} 
 \\[-1.8ex]\hline 
 \hline \\[-1.8ex] 
@@ -564,7 +565,7 @@ There are  several approaches to design generative or descriptive workloads:
 
 \begin{itemize}
 \item Model-based Stress testing: a usage model is proposed to simulate users’ behaviors.
-\item Feedback-Directed Learning Software Testing: is an adaptive, feedback-directed learning testing system that learns rules from system execution \cite{Luo2015} \cite{Wert2014}.
+\item Feedback-ORiEnted PerfOrmance Software Testing: is an adaptive, feedback-directed learning testing system that learns rules from system execution \cite{Luo2015} \cite{Wert2014}.
 \item Search-based Stress testing. 
 \end{itemize}
 
@@ -634,24 +635,23 @@ Garousi et al. proposes derivate Stress Test Requirements from an UML model. The
 them are standard in mainstream development methodologies and others are needed to describe the distributed architecture of the system under test (Fig. \ref{fig:modelbased}).
 
 \begin{figure}[h]
+\begin{minipage}{0.5\textwidth}
 \centering
-\includegraphics[width=0.5\textwidth]{./images/modelmethodology.png}
+\includegraphics[width=1\textwidth]{./images/modelmethodology.png}
 \caption{Model-based stress test methodology}
 \label{fig:modelbased}
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+\centering
+\includegraphics[width=0.6\textwidth]{./images/vogel.png}
+\caption{Exemplary workload model}
+\label{fig:vogel}
+\end{minipage}
 \end{figure}
 
 Vogele et al. presents an approach that aims to automate the extraction and transformation of workload specifications for an model-based performance prediction of session-based application systems.  The research also presents transformations to the common load testing tool Apache JMeter and to the Palladio Component Model \cite{Vogele2016}. The workload specification formalism (Workload Model) consists of the following components, which are detailed below and illustrated in Fig. \ref{fig:vogel}:
 \begin{itemize}\item An Application Model, specifying allowed sequences of service invocations and SUT-specific details for generating valid requests.\item A set of Behavior Models,each providing a probabilistic representation of user sessions in terms of invoked services.\item A Behavior Mix, specified as probabilities for the individual Behavior Models to occur during workload gen- eration.\item A Workload Intensity that includes a function which specifies the number of concurrent users during the workload generation execution.
 \end{itemize}
-
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.4\textwidth]{./images/vogel.png}
-\caption{Exemplary workload model}
-\label{fig:vogel}
-\end{figure}
-
 
 \subsection{Feedback-ORiEnted PerfOrmance Software Testing}
 
@@ -744,7 +744,7 @@ There are two measurement units normally associated with the fitness function in
 
 Processor cycles measurement is deterministic in the sense that it is independent of system load and results in the same execution times for the same set of input parameters. However, such a measurement is dependent on the compiler and optimizer used, therefore, the processor cycles differ for each platform. Execution time measurement is a non deterministic approach, there is no guarantee to get the same results for the same test inputs \cite{Afzal2009a}.  However, stress testing where testers have no access to the production environment should be measured by the execution time measurement \cite{Molyneaux2009} \cite{Afzal2009a}.
 
-Table \ref{tab:comparison}  shows a comparison between the research studies on load, performance, and stress tests presented by Afzal et al. \cite{Afzal2009a}. Afzal's work adds to some of the latest research in this area (\cite{Garousi2006} \cite{Garousi2010} \cite{DiAlesio2013} \cite{DiAlesio2014} \cite{Alesio2015} \cite{Gois2016} ). The columns represent the type of tool used (prototype or functional tool), and the rows represent the metaheuristic approach used by each research study (genetic algorithm, Tabu search, simulated annealing, or a customized algorithm). The table also sorts the research studies by the type of fitness function used (execution time or processor cycles). 
+Table \ref{tab:comparison}  shows a comparison between the research studies on load, performance, and stress tests presented by Afzal et al. \cite{Afzal2009a}. Afzal's work was added to some of the latest research in this area (\cite{Garousi2006} \cite{Garousi2010} \cite{DiAlesio2013} \cite{DiAlesio2014} \cite{Alesio2015} \cite{Gois2016} ). The columns represent the type of tool used (prototype or functional tool), and the rows represent the metaheuristic approach used by each research study (genetic algorithm, Tabu search, simulated annealing, or a customized algorithm). The table also sorts the research studies by the type of fitness function used (execution time or processor cycles). 
 
 
 \begin{table}[H]
@@ -842,7 +842,7 @@ Gois et al. proposes an hybrid metaheuristic approach using genetic algorithms, 
 \section{Research Question 2: How is a stress test executed and automated?}
 
 
-The stress test execution  consists of deploy the system  and steup test execution ; generating the workloads according to the configurations and terminating the load when the load test is completed and recording the system behavior. There are three general approaches of load test executions \cite{Molyneaux2009}\cite{Jiang2010}:
+The stress test execution  consists of deploy the system  and setup test execution ; generating the workloads according to the configurations and terminating the load when the load test is completed and recording the system behavior. There are three general approaches of load test executions \cite{Molyneaux2009}\cite{Jiang2010}:
 
 \begin{itemize}
 \item Live-User Based Executions: The test examines a system’s behavior when the system is simultaneously used by many users or execute a load test by employing a group of human testers. 
@@ -925,13 +925,21 @@ The stress test tools was categorized in three different groups \cite{MohammadS.
 \item Testing tools and other approaches for traffic generation based on HTTP traces.
 \end{itemize}
 
-The tools are compared using 12 features:
+The tools are compared using 12 features \cite{MohammadS.Obaidat}:
 
 \begin{itemize}
 \item Distributed architecture. This refers to the ability to distribute the generation process among different nodes.
 \item Analytical-based architecture. This feature represents the capability to use analytical and mathematical models to define the workload. 
 \item Business-based architecture. When defining a testing environment, the simulator architecture should implement the same features as the real environment.
-
+\item Client parameterization. This is the ability to parameterize generator nodes.
+\item Workload types. Some generators organize the workload in categories or types.
+\item Testing the Web application functionality (functional testing).
+\item Multiplatform refers to a software package that is implemented in multiple types of computer platforms, interoperating among them.
+\item Differences between LAN and WAN. Simulations.
+\item Ease of use. The generator should be a friendly application.
+\item The load test tool has performance reports.
+\item The load test tool is open-source.
+\item Users’ dynamism. The users has the hability of change they behaviour in during the test.
 \end{itemize}
 
 
@@ -941,21 +949,22 @@ Figures \ref{fig:group1},\ref{fig:group2} and \ref{fig:group3} summarizes the st
 \begin{minipage}{.5\textwidth}
 \centering
 \includegraphics[width=1\textwidth]{./images/group1.png}
-\caption{Symptoms of know performance problems \cite{Wert2013a}. }
+\caption{Group I- Benchmarks that model the client and server paradigm in Web context. 
+\cite{MohammadS.Obaidat} }
 \label{fig:group1}
 \end{minipage}
 \begin{minipage}{.5\textwidth}
 \centering
 \includegraphics[width=1\textwidth]{./images/group2.png}
-\caption{Symptoms of know performance problems \cite{Wert2013a}. }
+\caption{Group II- Software products to evaluate performance and functionality\cite{MohammadS.Obaidat}. }
 \label{fig:group2}
 \end{minipage}
 \end{figure}
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.6\textwidth]{./images/group3.png}
-\caption{Symptoms of know performance problems \cite{Wert2013a}. }
+\includegraphics[width=0.4\textwidth]{./images/group3.png}
+\caption{Group III- Testing tools and other approaches for traffic generation based on HTTP traces \cite{MohammadS.Obaidat}. }
 \label{fig:group3}
 \end{figure}
 
@@ -1174,11 +1183,16 @@ Some researchers advocate that the 90-percentile response time is a better measu
 
 \section{Conclusion}
 
-Figure \ref{fig:systematicreview} present the results summary of the systematic review.
+This systematic review investigated the use of stress test techniques. Figure \ref{fig:systematicreview} present the results summary of the systematic review. The Test Design phase could use Realistic Load and Fault-Inducing Load. Realistic Load just try to mimic the phenomena observed in the workload, whereas generative models try to emulate the process that generated the workload in the first place. There are  several approaches to design generative or descriptive workloads. In Model-based Stress testing, usage model is proposed to simulate users’ behaviours. Search-Based Testing is the process of automatically generating test according to a test adequacy criterion. Feedback-ORiEnted PerfOrmance Software Testing (FOREPOST) is an adaptive, feedback-directed learning testing system that learns rules from system execution traces and uses these learned rules to select test input data automatically to find more performance problems in applications when compared to exploratory random performance testing. 
+
+The model paradigm is what paradigm and notation are used to describe the model. There are many different modelling notations that have been used for modelling the behaviour of systems for test generation purposes: State-Based (or Pre/Post) Notations;
+Transition-based Notations; History-based Notations; Functional Notations; Operational Notations; Stochastic Notations and Data-Flow Notations. There are many kinds of non-functional search based tests: Execution time, Quality of service, Security, Usability and  Safety. There are two measurement units normally associated with the fitness function in stress test: processor cycles and execution time. The processor cycle approach describes a fitness function in terms of processor cycles. The execution time approach involves executing the application under test and measuring the execution time.
+
+The stress test execution  consists of deploy the system  and setup test execution ; generating the workloads according to the configurations and terminating the load when the load test is completed and recording the system behaviour. There are three general approaches of load test executions: Live-User Based, Driver-Based and Emulation-Based. There are several antipatterns that details features about  common performance problems. Blob is an antipattern whose problem is on the excessive message traffic generated by a single class or component.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.8\textwidth]{./images/summary1.png}
+\includegraphics[width=1\textwidth]{./images/summary1.png}
 \caption{Results summary of the systematic review.}
 \label{fig:systematicreview}
 \end{figure}

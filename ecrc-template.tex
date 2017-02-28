@@ -101,7 +101,7 @@ framexleftmargin=20pt
 \firstpage{1}
 
 %% Give the name of the journal
-\journalname{Procedia Computer Science}
+\journalname{Information and Software Technology}
 
 %% Give the author list to appear in the running head
 %% Example \runauth{C.V. Radhakrishnan et al.}
@@ -113,10 +113,10 @@ framexleftmargin=20pt
 %% Otherwise the content of \jnltitlelogo will be set between horizontal lines as a default logo
 
 %% Give the abbreviation of the Journal.
-\jid{procs}
+\jid{ist-elsevier}
 
 %% Give a short journal name for the dummy logo (if needed)
-\jnltitlelogo{Procedia Computer Science}
+\jnltitlelogo{Information and Software}
 
 %% Hereafter the template follows `elsarticle'.
 %% For more details see the existing template files elsarticle-template-harv.tex and elsarticle-template-num.tex.
@@ -212,12 +212,12 @@ framexleftmargin=20pt
 \author{Pedro  Porfírio}
 \author{André  Coelho}
 
-\address{}
+\address{UNIFOR, Av. Washington Soares, 1321 - Edson Queiroz, Fortaleza - CE, 60811-905, Brazil}
 
 \begin{abstract}
 The objective of this paper is to determine how proper a stress test is designed, executed and analysed. We performed a systematic review of studies that use stress tests using model-based testing, Feedback-Directed Learning Software Testing and search-based testing. The systematic review is
 based on a comprehensive set of 97 articles obtained after a multi-stage selection process and have been
-published in the time span 1994–2016. The results of the review show that are tho types of workload models applied on stress tests generative models and descriptible models. The load test tools was grouped in three different groups. The research present a serie of 11 common performance problems.
+published in the time span 1994–2016. The results of the review show that are tho types of workload models applied on stress tests generative models and descriptible models. Generative model just try to mimic the phenomena observed in the workload, whereas generative models try to emulate the process that generated the workload to fault-inducing. The Workload design phase of stress testing uses three different aproaches: model-based tests, search-based tests and FOREPOST. In model-based stress testing, tests use a model to describe the behavior of a system.Search-Based Software Testing is the use of a meta-heuristic optimizing search technique to automate or partially automate a testing task. Feedback-ORiEnted PerfOrmance Software Testing (FOREPOST) is an adaptive, feedback-directed learning testing system that learns rules from system execution traces. The load test tools was classified into three different groups using 12 common features. The research present a serie of 11 common performance problems.
 \end{abstract}
 
 \begin{keyword}
@@ -230,7 +230,7 @@ Systematic Review \sep
 Stress Testing \sep
 Model-based Testing \sep
 Search-based Testing \sep
-Forepost \sep
+FOREPOST \sep
 Performance Antipatterns
 
 \end{keyword}
@@ -274,7 +274,7 @@ The main difference between load tests, performance tests and stress tests are:
 
 \section{Method}
 
-This paper surveys the state of the art literature in stress testing research. The thesis extends the survey presented by Jiang et al. and Afzal et al. \cite{Afzal2009a} to the Stress Testing context \cite{Jiang2010}.  This survey will be useful for stress testing practitioners and software engineering researchers with interests in testing and analyzing software systems. The paper use the systematic review method proposed by Kitchenham \cite{Kitchenham2007b}.
+This paper surveys the state of the art literature in stress testing research. The thesis extends the survey presented by Jiang et al. \cite{Jiang2010}  and Afzal et al. \cite{Afzal2009a} to the Stress Testing context .  This survey will be useful for stress testing practitioners and software engineering researchers with interests in testing and analyzing software systems. The paper use the systematic review method proposed by Kitchenham \cite{Kitchenham2007b}.
 
 
 
@@ -282,7 +282,7 @@ The aim of a systematic review is to find as many primary studies relating to th
 
 Figure \ref{fig:RESUME} presents the summary result of systematic review process. The systematic review is based on a comprehensive set of 97 articles obtained after a multi-stage selection process and have been published in the time span 1994–2016.
 
-\begin{figure}[H]
+\begin{figure}[h]
 \centering
 \includegraphics[width=0.7\textwidth]{./images/systematic.png}
 \caption{Bubble chart for results of search with the keyword 'Load Testing'}
@@ -388,7 +388,7 @@ All papers found are stored in \url{https://www.mendeley.com/community/pesquisat
 
 
 
-\begin{figure}[H]
+\begin{figure}[h]
 \begin{minipage}{0.5\textwidth}
 \centering
 \includegraphics[width=1\textwidth]{./images/wordcloudloadtesting.png}
@@ -427,7 +427,7 @@ Data synthesis involves collating and summarising the results of the included pr
 
 Figure \ref{fig:SUMMARY} presents the type of research paper by year.
 
-\begin{figure}[H]
+\begin{figure}[h]
 \centering
 \includegraphics[width=0.7\textwidth]{./images/type.png}
 \caption{Summary of type of research paper by year}
@@ -480,7 +480,7 @@ $1$ & $1$ & $2$  \\
 
 Contrary to functional testing, which has clear testing objectives, Stress testing objectives are not clear in the early development stages and are often defined later on a case-by-case basis. The Fig. \ref{fig:testprocess} shows a common Load, Performance and Stress test process  \cite{Jiang2010}.
 
-\begin{figure}[H]
+\begin{figure}[h]
 \centering
 \includegraphics[width=1\textwidth]{./images/testprocessh.png}
 \caption{Load, Performance and Stress Test Process \cite{Jiang2010}\cite{Erinle2013}}
@@ -671,7 +671,7 @@ The Fig. \ref{fig:forepost} presents the main workflow of FOREPOST solution. The
 The user can review the results of clustering (7). These clustered traces are supplied (8) to the Learner that uses them to learn the classification model and (9) output rules. The user can review (10) these rules and mark some of them as erroneous if the user has sufficient evidence to do so. Then the rules are supplied (11) to the Test Script. Finally, the input space is partitioned into clusters that lead to good and bad test cases, to find methods that are specific to good performance test cases. This task is accomplished in parallel to computing rules, and it starts when the Trace Analyzer produces (12) the method and data statistics that is used to construct (13) two matrices (14). Once these matrices are constructed, ICA decomposes them (15) into the matrices for bad and good test cases correspondingly. Finally, the Advisor (16) determines top methods that performance testers should look at (17) to debug possible performance problems.
 
 
-\begin{figure}[H]
+\begin{figure}[h]
 \centering
 \includegraphics[width=0.5\textwidth]{./images/FOREPOST.png}
 \caption{The architecture and workflow of FOREPOST}
@@ -697,7 +697,7 @@ One of the most popular search techniques used in SBST belong to the family of E
 of an Evolutionary Algorithm when used in the context of
 Evolutionary Testing \cite{Baars2011}.
 
-\begin{figure}[H]
+\begin{figure}[h]
 \centering
 \includegraphics[width=0.5\textwidth]{./images/evolutionary.png}
 \caption{Evolutionary Algorithm Search Based Test Cycle\cite{Baars2011}. }
@@ -730,7 +730,7 @@ SBST has made many achievements, and demonstrated its wide applicability and inc
 \item Safety: Safety testing is an important component of the testing strategy of safety critical systems where the systems are required to meet safety constraints.
 \end{itemize}
 
-A variety of metaheuristic search techniques are found to be applicable for non-functional testing including simulated annealing, tabu search, genetic algorithms, ant colony methods, grammatical evolution, genetic programming and swarm intelligence methods. The Fig. \ref{fig:metabykind} shows a comparison between the range of metaheuristcs and the type of non-functional search based test.The Data comes from Afzal et al. \cite{Afzal2009a}. Afzal's work adds to some of the latest research in this area (\cite{Garousi2006} \cite{Garousi2010} \cite{DiAlesio2013} \cite{DiAlesio2014} \cite{Alesio2015} \cite{Gois2016}). 
+A variety of metaheuristic search techniques are found to be applicable for non-functional testing including simulated annealing, tabu search, genetic algorithms, ant colony methods, grammatical evolution, genetic programming and swarm intelligence methods. The Fig. \ref{fig:metabykind} shows a comparison between the range of metaheuristcs and the type of non-functional search based test.The Data comes from Afzal et al. \cite{Afzal2009a}. Afzal's work was added with some of the latest research in this area (\cite{Garousi2006} \cite{Garousi2010} \cite{DiAlesio2013} \cite{DiAlesio2014} \cite{Alesio2015} \cite{Gois2016}). 
 
 
 \begin{figure}[h]
@@ -754,7 +754,7 @@ Processor cycles measurement is deterministic in the sense that it is independen
 Table \ref{tab:comparison}  shows a comparison between the research studies on load, performance, and stress tests presented by Afzal et al. \cite{Afzal2009a}. Afzal's work was added to some of the latest research in this area (\cite{Garousi2006} \cite{Garousi2010} \cite{DiAlesio2013} \cite{DiAlesio2014} \cite{Alesio2015} \cite{Gois2016} ). The columns represent the type of tool used (prototype or functional tool), and the rows represent the metaheuristic approach used by each research study (genetic algorithm, Tabu search, simulated annealing, or a customized algorithm). The table also sorts the research studies by the type of fitness function used (execution time or processor cycles). 
 
 
-\begin{table}[H]
+\begin{table}[h]
 \centering
 \caption{Distribution of the research studies over the range of applied metaheuristics}
 \label{tab:comparison}
@@ -892,12 +892,21 @@ WebStone was designed by Silicon Graphics in 1996 to measure the perfor- mance o
 
 TPC Benchmarkt (TPC-W) is a transactional Web benchmark defined by the Transaction Processing Performance Council that models a representative e-commerce evaluating the architecture performance on a generic profile.The models uses a remote browser emulator to generate requests to server under test. TPC-W adopts the CBMG model to define the workloads in spite of this model only characterizing user dynamic behavior partially. The remote browser emulators are located in the client side and generate workload towards the e-commerce Web application, which is located in the server side (e-commerce server) \cite{MohammadS.Obaidat} \cite{Menasce2002a}.
 
-\begin{figure}[H]
+\begin{figure}[h]
+\begin{minipage}{0.5\textwidth}
 \centering
-\includegraphics[width=0.5\textwidth]{./images/tpcw.png}
+\includegraphics[width=1\textwidth]{./images/tpcw.png}
 \caption{TPC-W architecture \cite{MohammadS.Obaidat} \cite{Menasce2002a}}
 \label{fig:tpcw}
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+\centering
+\includegraphics[width=1\textwidth]{./images/loadrunner.png}
+\caption{Load Runner Scripting}
+\label{fig:loadrunner}
+\end{minipage}
 \end{figure}
+
 
 
 Open STA is an open source software developed in C++, and released under the GPL licence. OpenSTA provides a script language which permits to simulate the activity of a user. This language can describe HTTP/S scenario and all the test executions is managed in a graphical interface. The composition of the test is
@@ -906,12 +915,6 @@ very simple, allowing the tester choose scripts for a test and a remote computer
 
 LoadRunner is one of the most popular industry-standard software products for functional and performance testing. It was originally developed by Mercury Interactive, but nowadays it is commercialized by Hewlett-Packard. LoadRunner supports the definition of user navigations, which are represented using a scripting language. The basic steps are recorded, creating a shell script. Next, this script is then taken off-line, and undergoes further manual steps such as data parameterization and correlations. Finally, the desired performance scripts are obtained after adding transactions and any other required logic (Fig. \ref{fig:loadrunner}). LoadRunner scripting only permits partial reproduction of user dynamism when generating Web workload, because it cannot define either advanced interactions of users, such as parallel browsing behavior, or continuous changes in user’s behaviors \cite{MohammadS.Obaidat}.
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.5\textwidth]{./images/loadrunner.png}
-\caption{Load Runner Scripting}
-\label{fig:loadrunner}
-\end{figure}
 
 
 
@@ -942,8 +945,8 @@ The tools are compared using 12 features \cite{MohammadS.Obaidat}:
 \item Workload types. Some generators organize the workload in categories or types.
 \item Testing the Web application functionality (functional testing).
 \item Multiplatform refers to a software package that is implemented in multiple types of computer platforms, interoperating among them.
-\item Differences between LAN and WAN. Simulations.
-\item Ease of use. The generator should be a friendly application.
+\item Differences between LAN and WAN. 
+\item The generator should be a friendly application.
 \item The load test tool has performance reports.
 \item The load test tool is open-source.
 \item Users’ dynamism. The users has the hability of change they behaviour in during the test.
@@ -952,7 +955,7 @@ The tools are compared using 12 features \cite{MohammadS.Obaidat}:
 
 Figures \ref{fig:group1},\ref{fig:group2} and \ref{fig:group3} summarizes the studied workloads generators as well as the grade (full or partial) in which they fulfill the features described bellow. None of the presented tools uses heuristic or learning resources when choosing the scenarios to be tested or the workloads to be applied in the test.
 
-\begin{figure}[H]
+\begin{figure}[h]
 \begin{minipage}{.5\textwidth}
 \centering
 \includegraphics[width=1\textwidth]{./images/group1.png}
@@ -968,9 +971,9 @@ Figures \ref{fig:group1},\ref{fig:group2} and \ref{fig:group3} summarizes the st
 \end{minipage}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[h]
 \centering
-\includegraphics[width=0.4\textwidth]{./images/group3.png}
+\includegraphics[width=0.6\textwidth]{./images/group3.png}
 \caption{Group III- Testing tools and other approaches for traffic generation based on HTTP traces \cite{MohammadS.Obaidat}. }
 \label{fig:group3}
 \end{figure}
@@ -981,7 +984,7 @@ Figures \ref{fig:group1},\ref{fig:group2} and \ref{fig:group3} summarizes the st
 
 
 
-\begin{figure}[H]
+\begin{figure}[h]
 \centering
 \includegraphics[width=0.6\textwidth]{./images/symptoms.png}
 \caption{Symptoms of know performance problems \cite{Wert2013a}. }
@@ -1053,7 +1056,7 @@ of jobs that will experience very long waiting times. Unbalanced Processing occu
 
 The pipe and filter architectures  and extensive processing antipattern represents a manifestation of the unbalanced processing antipattern. The pipe and filter architectures occurs when the throughput of the overall system is determined by the slowest filter. The  Fig. \ref{fig:pipefilter} describes a software S with a Pipe and Filter Architectures problem: (a) Static View, there is a software entity instance, e.g. Sa, offering an operation (operation x) whose resource demand (computation = \$compOpx, storage = \$storOpx, bandwidth = \$bandOpx) is quite high; (b) Dynamic View, the operation opx is invoked in a service  and the throughput of the service (\$Th(S)) is lower than the required one. The extensive processing occurs when a process monopolizes a processor and prevents a set of other jobs to be executed until it finishes its computation. The Fig. \ref{fig:extpro} describes a software S with a Extensive Processing problem: (a) Static View, there is a software entity instance, e.g. Sa, offering two operations (operation x, operation y) whose resource demand is quite unbalanced, since opx has a high demand (computation = \$compOpx, storage = \$storOpx, bandwidth = \$bandOpx), whereas opy has a low demand (computation = \$compOpy, storage = \$storOpy, bandwidth = \$bandOpy); (b) Dynamic View, the operations opx and opy are alternatively invoked in a service and the response time of the service (\$RT(S)) is larger than the required one \cite{Vetoio2011}.
 
-\begin{figure}[H]
+\begin{figure}[h]
 \centering
 \includegraphics[width=0.5\textwidth]{./images/unbalanced.png}
 \caption{Unbalanced Processing sample \cite{Wert2013a}. }
@@ -1061,7 +1064,7 @@ The pipe and filter architectures  and extensive processing antipattern represen
 \end{figure}
 
 
-\begin{figure}[H]
+\begin{figure}[h]
 \begin{minipage}{.5\textwidth}
 \centering
 \includegraphics[width=1\textwidth]{./images/pipe2.png}
@@ -1084,7 +1087,7 @@ dependencies between individual queries the more the Circuitous
 Treasure Hunt antipattern hurts performance \cite{Wert2014}. The Fig. \ref{fig:circuit}  shows a software S with a Circuitous Treasure Hunt problem: (a) Static View, there is a software entity instance e.g. Sa, retrieving information from the database; (b) Dynamic View, the software  S generates a large number of database calls by performing several queries up to the final operation \cite{Vetoio2011}.
 
 
-\begin{figure}[H]
+\begin{figure}[h]
 \begin{minipage}{.5\textwidth}
 \centering
 \includegraphics[width=1\textwidth]{./images/circuit.png}
@@ -1107,7 +1110,7 @@ The Tower of Babel antipattern most often occurs when information is translated 
 internal format by the receiving process. When the translation and parsing is excessive, the system spends most
 of its time doing this and relatively little doing real work \cite{Smith2003}. Fig. shows a system with a Tower of Babel problem: (a) Static View, there are some software entity instances, e.g. Sa, Sb, . . . , Sn; (b) Dynamic View, the software instances Sd performs many times the translation of format for communicating with other instances \cite{Vetoio2011}.
 
-\begin{figure}[H]
+\begin{figure}[h]
 \begin{minipage}{.5\textwidth}
 \centering
 \includegraphics[width=0.6\textwidth]{./images/babel2.png}
@@ -1128,7 +1131,7 @@ One-Lane Bridge is a antipattern that occurs when one or a few processes execute
 
 Using dynamic allocation, objects are created when they are first accessed and then destroyed when they are no longer needed. Excessive Dynamic Allocation, however, addresses frequent, unnecessary creation and destruction of objects of the same class. Dynamic allocation is expensive , an object created in memory must be allocated from the heap, and any initialization code for the object and the contained objects must be executed. When the object is no longer needed, necessary clean-up must be performed, and the reclaimed memory must be returned to the heap to avoid memory leaks \cite{Smith2002} \cite{Smith2003}.
 
-\begin{figure}[H]
+\begin{figure}[h]
 \begin{minipage}{.5\textwidth}
 \centering
 \includegraphics[width=1\textwidth]{./images/excessivedynamicallocation.png}
@@ -1148,7 +1151,7 @@ The Fig. \ref{fig:dynallocation} shows a Excessive Dynamic Allocation sample. Th
 The Traffic Jam antipattern occurs if many concurrent threads or processes are waiting for the same  active resources (like CPU or hard disk). This antipatterns produces a large backlog in jobs waiting for service. The performance impact of the Traffic Jam is the transient behavior that produces wide variability in response time. Sometimes it is fine, but at other times, it is unacceptably long. Figure \ref{fig:jam} describes a software with a Traffic Jam problem, the monitored response time of the operation shows a wide variability in response time which persists long \cite{Vetoio2011}. 
 
 
-\begin{figure}[H]
+\begin{figure}[h]
 \begin{minipage}{.5\textwidth}
 \centering
 \includegraphics[width=0.5\textwidth]{./images/ramp.png}
@@ -1187,15 +1190,23 @@ There are three types of data summarization techniques proposed in the literatur
 
 Some researchers advocate that the 90-percentile response time is a better measurement than the average/medium response time, as the former accounts for most of the peaks, while eliminating the outliers \cite{Jiang2010}.
 
+\FloatBarrier
 
 \section{Conclusion}
 
-This systematic review investigated the use of stress test techniques. Figure \ref{fig:systematicreview} present the results summary of the systematic review. The Test Design phase could use Realistic Load and Fault-Inducing Load. Realistic Load just try to mimic the phenomena observed in the workload, whereas generative models try to emulate the process that generated the workload in the first place. There are  several approaches to design generative or descriptive workloads. In Model-based Stress testing, usage model is proposed to simulate users’ behaviours. Search-Based Testing is the process of automatically generating test according to a test adequacy criterion. Feedback-ORiEnted PerfOrmance Software Testing (FOREPOST) is an adaptive, feedback-directed learning testing system that learns rules from system execution traces and uses these learned rules to select test input data automatically to find more performance problems in applications when compared to exploratory random performance testing. 
+This systematic review investigated the use of stress test techniques. Figure \ref{fig:systematicreview} present the results summary of the systematic review. The Test Design phase could use Realistic Load and Fault-Inducing Load. Realistic Load just try to mimic the phenomena observed in the workload, whereas generative models try to emulate the process that generated the workload in the first place. There are  several approaches to design generative or descriptive workloads. 
 
-The model paradigm is what paradigm and notation are used to describe the model. There are many different modelling notations that have been used for modelling the behaviour of systems for test generation purposes: State-Based (or Pre/Post) Notations;
-Transition-based Notations; History-based Notations; Functional Notations; Operational Notations; Stochastic Notations and Data-Flow Notations. There are many kinds of non-functional search based tests: Execution time, Quality of service, Security, Usability and  Safety. There are two measurement units normally associated with the fitness function in stress test: processor cycles and execution time. The processor cycle approach describes a fitness function in terms of processor cycles. The execution time approach involves executing the application under test and measuring the execution time.
+In Model-based Stress testing, usage model is proposed to simulate users’ behaviours. The model paradigm is what paradigm and notation are used to describe the model. There are many different modelling notations that have been used for modelling the behaviour of systems for test generation purposes: State-Based (or Pre/Post) Notations;
+Transition-based Notations; History-based Notations; Functional Notations; Operational Notations; Stochastic Notations and Data-Flow Notations. There are many kinds of non-functional search based tests: Execution time, Quality of service, Security, Usability and  Safety. 
 
-The stress test execution  consists of deploy the system  and setup test execution ; generating the workloads according to the configurations and terminating the load when the load test is completed and recording the system behaviour. There are three general approaches of load test executions: Live-User Based, Driver-Based and Emulation-Based. There are several antipatterns that details features about  common performance problems. Blob is an antipattern whose problem is on the excessive message traffic generated by a single class or component.
+Feedback-ORiEnted PerfOrmance Software Testing (FOREPOST) is an adaptive, feedback-directed learning testing system that learns rules from system execution traces and uses these learned rules to select test input data automatically to find more performance problems in applications when compared to exploratory random performance testing. 
+
+Search-Based Testing is the process of automatically generating test according to a test adequacy criterion. The application of SBST algorithms to  stress tests involves finding the best- and worst-case execution times (B/WCET) to determine whether timing constraints are fulfilled. There are two measurement units normally associated with the fitness function in stress test: processor cycles and execution time. The processor cycle approach describes a fitness function in terms of processor cycles. The execution time approach involves executing the application under test and measuring the execution time.
+
+The stress test execution  consists of deploy the system  and setup test execution ; generating the workloads according to the configurations and terminating the load when the load test is completed and recording the system behaviour. There are three general approaches of load test executions: Live-User Based, Driver-Based and Emulation-Based. In Live-User Based Executions, The test examines a system’s behavior when the system is simultaneously used by many users or execute a load test by employing a group of human testers. The driver based execution approach automatically generate thousands or millions of concurrent requests for a long period of time using a software tool. The emulation based load test execution approach performs the load testing on special platforms and doesn't require a fully functional system and conduct load testing.
+
+
+There are several antipatterns that details features about  common performance problems. Blob is an antipattern whose problem is on the excessive message traffic generated by a single class or component. Unbalanced Processing it's characterises for one scenario where a specific class of requests generates a pattern of execution within the system that tends to overload a particular resource.
 
 \begin{figure}[H]
 \centering

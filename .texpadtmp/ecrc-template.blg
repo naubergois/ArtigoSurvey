@@ -31,7 +31,6 @@ Repeated entry---line 2148 of file ../biblio.bib
  : @book{Halili2008
  :                 ,
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "Alshahwan2001"
 Warning--empty journal in Sandler2004
 Warning--empty publisher in Perry2004
 Warning--empty publisher in Lewis2005
@@ -75,45 +74,45 @@ Warning--empty journal in Malik2013a
 Warning--empty journal in Barna2013
 Warning--there's a number but no volume in Harman2015
 Warning--empty school in Ganapathi2009
-You've used 115 entries,
+You've used 116 entries,
             2937 wiz_defined-function locations,
-            1468 strings with 31818 characters,
-and the built_in function-call counts, 33160 in all, are:
-= -- 3177
-> -- 1020
-< -- 12
-+ -- 416
-- -- 301
-* -- 2507
-:= -- 4401
-add.period$ -- 148
-call.type$ -- 115
-change.case$ -- 105
+            1473 strings with 32107 characters,
+and the built_in function-call counts, 33591 in all, are:
+= -- 3221
+> -- 1027
+< -- 13
++ -- 419
+- -- 303
+* -- 2537
+:= -- 4451
+add.period$ -- 150
+call.type$ -- 116
+change.case$ -- 106
 chr.to.int$ -- 6
-cite$ -- 158
-duplicate$ -- 1047
-empty$ -- 3752
-format.name$ -- 390
-if$ -- 8551
+cite$ -- 159
+duplicate$ -- 1065
+empty$ -- 3808
+format.name$ -- 393
+if$ -- 8670
 int.to.chr$ -- 0
-int.to.str$ -- 115
-missing$ -- 120
-newline$ -- 426
-num.names$ -- 113
-pop$ -- 808
+int.to.str$ -- 116
+missing$ -- 121
+newline$ -- 431
+num.names$ -- 114
+pop$ -- 818
 preamble$ -- 2
 purify$ -- 0
 quote$ -- 0
-skip$ -- 2142
+skip$ -- 2172
 stack$ -- 0
-substring$ -- 1585
-swap$ -- 316
-text.length$ -- 10
+substring$ -- 1604
+swap$ -- 324
+text.length$ -- 11
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 43
-while$ -- 257
-width$ -- 118
-write$ -- 999
+while$ -- 261
+width$ -- 119
+write$ -- 1011
 (There were 7 error messages)

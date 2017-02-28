@@ -467,6 +467,16 @@ T.~Nivas, C.~Csallner, {Managing Performance Testing With Release Certification
   and Data Correlation}, in: European Conference on Software Engineering /
   Foundations of Software Engineering, 2011.
 
+\bibitem{Alshahwan2001}
+N.~Alshahwan, M.~Harman,
+  \href{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=6100082}{{Automated
+  web application testing using search based software engineering}}, in: 2011
+  26th IEEE/ACM International Conference on Automated Software Engineering (ASE
+  2011), 2011, pp. 3--12.
+\newblock \href {http://dx.doi.org/10.1109/ASE.2011.6100082}
+  {\path{doi:10.1109/ASE.2011.6100082}}.
+\newline\urlprefix\url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=6100082}
+
 \bibitem{Bazilinskyy2013}
 P.~Bazilinskyy, M.~Brunner,
   \href{http://www0.cs.ucl.ac.uk/staff/Yuanyuan.Zhang/StuConOS2013/stuconos2013{\_}submission{\_}3.pdf}{{Performance

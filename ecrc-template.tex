@@ -215,18 +215,9 @@ framexleftmargin=20pt
 \address{}
 
 \begin{abstract}
-The objective of this paper is to determine how proper a stress test is designed, executed and analysed. We performed a systematic review of studies that use stress tests using model-based testing, Feedback-Directed Learning Software Testing and search-based testing. We are interested in types of non-functional testing targeted
-using metaheuristic search techniques, different fitness functions used in different types of search-based
-non-functional testing and challenges in the application of these techniques. The systematic review is
+The objective of this paper is to determine how proper a stress test is designed, executed and analysed. We performed a systematic review of studies that use stress tests using model-based testing, Feedback-Directed Learning Software Testing and search-based testing. The systematic review is
 based on a comprehensive set of 97 articles obtained after a multi-stage selection process and have been
-published in the time span 1994–2016. The results of the review show that metaheuristic search techniques
-have been applied for non-functional testing of execution time, quality of service, security, usability
-and safety. A variety of metaheuristic search techniques are found to be applicable for non-functional
-testing including simulated annealing, tabu search, genetic algorithms, ant colony methods, grammatical
-evolution, genetic programming (and its variants including linear genetic programming) and swarm
-intelligence methods. The review reports on different fitness functions used to guide the search for each
-of the categories of execution time, safety, usability, quality of service and security; along with a discussion
-of possible challenges in the application of metaheuristic search techniques
+published in the time span 1994–2016. The results of the review show that are tho types of workload models applied on stress tests generative models and descriptible models. The load test tools was grouped in three different groups. The research present a serie of 11 common performance problems.
 \end{abstract}
 
 \begin{keyword}
@@ -234,6 +225,13 @@ of possible challenges in the application of metaheuristic search techniques
 
 %% MSC codes here, in the form: \MSC code \sep code
 %% or \MSC[2008] code \sep code (2000 is the default)
+
+Systematic Review \sep 
+Stress Testing \sep
+Model-based Testing \sep
+Search-based Testing \sep
+Forepost \sep
+Performance Antipatterns
 
 \end{keyword}
 
@@ -264,6 +262,15 @@ In a load testing, the system is evaluated at predefined load levels \cite{DiLuc
 
 Stress testing investigates the behavior of the system under conditions
 that overload its resources. The stress testing verifies the system behavior against heavy workloads \cite{Sandler2004} \cite{Lewis2005}, which are executed to evaluate a system beyond its limits, validate system response in activity peaks, and verify whether the system is able to recover from these conditions. It differs from other kinds of testing in that the system is executed on or beyond its breakpoints, forcing the application or the supporting infrastructure to fail \cite{DiLucca2006} \cite{Molyneaux2009}.
+
+The main difference between load tests, performance tests and stress tests are:
+
+\begin{itemize}
+
+\item Performance tests demonstrate that the system reaches its performance objectives.
+\item Load tests necessary use a load (concurrent or simultaneous users).
+\item Stress tests differs from other kinds of testing in that the system is executed on or beyond its break-points, forcing the application or the supporting infrastructure to fail.
+\end{itemize}
 
 \section{Method}
 
